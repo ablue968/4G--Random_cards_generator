@@ -1,40 +1,84 @@
 body {
     background-color: green;
 }
+
 .card {
 background-color: whitesmoke;
 display: inline-block;
+font-family: 'Rye', cursive;
 width: 400px;
-height: 650px;
+height: 600px;
+line-height: normal;
 border: 1px solid black;
 text-align: center;
-line-height: 200px;
 border-radius: 15px;
-font-size: 20px;
 position: relative;
 }
-.card:after {
-font-size: 70%;
-font-weight: bold;
+
+.spades::before{
+content: "\2660";
+color: black;
+font-size: 100px;
+position: relative;
+left: -150px;
 }
-.spades::before,
+
 .spades::after {
 content: "\2660";
 color: black;
-
+font-size: 100px;
+position: relative;
+right: -150px;
+bottom: -15px;
 }
-.heart::before,
+
+.heart::before{
+content: "\2665";
+color: red;
+font-size: 100px;
+position: relative;
+left: -150px;
+}
+
 .heart::after {
 content: "\2665";
 color: red;
+font-size: 100px;
+position: relative;
+right: -150px;
+bottom: -15px;
 }
-.club::before,
+
+.club::before{
+content: "\2663";
+color: black;
+font-size: 100px;
+position: relative;
+left: -150px;
+}
+
 .club::after {
 content: "\2663";
 color: black;
+font-size: 100px;
+position: relative;
+right: -150px;
+bottom: -15px;
 }
-.diamond::before,
+
+.diamond::before{
+content: "\2666";
+color: red;
+font-size: 100px;
+position: relative;
+left: -150px;
+}
+
 .diamond::after {
 content: "\2666";
 color: red;
+font-size: 100px;
+position: relative;
+right: -150px;
+bottom: -15px;
 }
